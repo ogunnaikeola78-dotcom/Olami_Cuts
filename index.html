@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olami_Cuts | Mobile Barber</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #111, #222);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  color: #f5c542;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 25px;
+  margin: 8px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #f5c542;
+  color: #111;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #f5c542;
+}
+
+/* ABOUT */
+.about p {
+  color: #ccc;
+  font-size: 17px;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background: #1d1d1d;
+  padding: 30px 20px;
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #aaa;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #333;
+}
+
+/* CONTACT */
+.contact {
+  background: #181818;
+  max-width: none;
+}
+
+.contact p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #0a0a0a;
+  color: #888;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 280px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>Olami_<span>Cuts</span></h1>
+    <p>Professional Mobile Barber in Sagamu, Ogun State</p>
+
+    <a class="btn" href="#services">View Services</a>
+    <a class="btn" href="#gallery">View My Work</a>
+    <a class="btn" href="#contact">Book a Cut</a>
+  </div>
+</header>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a mobile barber delivering professional haircut and grooming
+    services directly to my clients. Clean cuts, sharp finishing and
+    quality service wherever you are.
+  </p>
+</section>
+
+<section id="services">
+  <h2>My Services</h2>
+
+  <div class="services">
+
+    <div class="service">
+      <h3>✂️ Fade</h3>
+      <p>Clean and professional fades with a sharp finish.</p>
+    </div>
+
+    <div class="service">
+      <h3>💈 Low Cut</h3>
+      <p>Fresh, neat and well-finished low cuts.</p>
+    </div>
+
+    <div class="service">
+      <h3>🧔 Beard Grooming</h3>
+      <p>Sharp beard trimming and clean-up.</p>
+    </div>
+
+    <div class="service">
+      <h3>🎨 Hair Dye</h3>
+      <p>Professional hair colouring and styling.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>My Work</h2>
+
+  <p style="color:#aaa; margin-bottom:25px;">
+    Check out some of my latest cuts and grooming work.
+  </p>
+
+  <div class="gallery">
+
+    <img src="photos/cut1.jpg" alt="Olami_Cuts haircut">
+    <img src="photos/cut2.jpg" alt="Olami_Cuts haircut">
+    <img src="photos/cut3.jpg" alt="Olami_Cuts haircut">
+    <img src="photos/cut4.jpg" alt="Olami_Cuts haircut">
+    <img src="photos/cut5.jpg" alt="Olami_Cuts haircut">
+    <img src="photos/cut6.jpg" alt="Olami_Cuts haircut">
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Book Your Cut</h2>
+
+  <p>
+    Ready for a fresh look? Contact Olami_Cuts today and book your appointment.
+  </p>
+
+  <a class="btn"
+     href="https://wa.me/234XXXXXXXXXX"
+     target="_blank">
+     Book on WhatsApp
+  </a>
+</section>
+
+<footer>
+  © 2026 Olami_Cuts • Mobile Barber • Sagamu, Ogun State
+</footer>
+
+</body>
+</html>
